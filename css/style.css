@@ -1,0 +1,302 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@300&display=swap');
+* {
+  padding: 0%;
+  margin: 0%;
+  box-sizing: border-box;
+  font-family: 'Open Sans', sans-serif;
+}
+.main_div {
+  width: 100%;
+  height: 100vh;
+  place-items: center;
+  display: grid;
+}
+.center_space{
+    width: 90%;
+    height: 70vh;
+    background-image: linear-gradient(60deg,#040d88ab 10%,rgb(24, 0, 0) 70%);
+    box-shadow: 0 0 20px rgb(0,0,0,.3);
+    border-radius: 10px;
+}
+.nv_brand{
+    width: 100%;
+    height: 15%;
+    position: relative;
+    top: 0;
+    /* background-color: red; */
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.nv_brand .logo{
+    width: 20%;
+    height: 100%;
+    place-items: center;
+    display: grid;
+}
+.logo h3{
+    color: #fff;
+    font-weight: lighter;
+    /* font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif; */
+}
+.menu_items{
+    width: 50%;
+    height: 100%;
+    place-items: center;
+    display: grid;
+    /* border: 1px solid #fff; */
+}
+.menu_items ul{
+    position: relative;
+}
+.menu_items ul li{
+    display: inline;
+    list-style: none;
+}
+.menu_items ul li a{
+    margin: 0 20px;
+    font-size: 1.2rem;
+    color: #fff;
+    text-decoration: none;
+    text-transform: capitalize;
+    letter-spacing: 2px;
+    font-weight: lighter;
+    /* font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif; */
+}
+.login_btn{
+    width: 20%;
+    height: 100%;
+    place-items: center;
+    display: grid;
+}
+.login_btn button{
+    font-size: 1.1rem;
+    letter-spacing: 1px;
+    color: rgba(255, 255, 255, 0.829);
+    background-color: transparent;
+    padding: 10px 30px;
+    border: 2px solid rgba(255, 255, 255, 0.589);
+    outline: none;
+    cursor: pointer;
+    text-transform: uppercase;
+    font-weight: lighter;
+    border-radius: 40px;
+    transition-duration: 500ms;
+    /* font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif; */
+}
+.login_btn button:hover{
+    color: rgba(0, 0, 0, 0.472);
+    background-color: #fff;
+}
+.center_room{
+    position: relative;
+    width: 100%;
+    height: 85%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.center_room .text_side{
+    width: 60%;
+    height: 100%;
+    position: relative;
+    place-items: center;
+    display: grid;
+}
+.center_room .img_side{
+    place-items: center;
+    display: grid;
+    width: 40%;
+    height: 100%;
+    position: relative;
+    overflow: hidden;
+}
+.img_side img{
+    width: 400px;
+    margin-top: 20px;
+}
+.text_side .set_text{
+    width: 90%;
+    height: 80%;
+    padding: 30px 10px;
+    /* background-color: red; */
+
+}
+.set_text h1{
+    color: rgba(255, 255, 255, 0.651);
+    text-transform: capitalize;
+    font-size: 3.4rem;
+    font-weight: lighter;
+    /* font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif; */
+}
+.cps{
+    color: rgb(8, 243, 223);
+    font-size: 3.9rem;
+    font-weight: bold;
+}
+p{
+    color: rgba(255, 255, 255, 0.521);
+    font-size: .9rem;
+    letter-spacing: 1px;
+    /* font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif; */
+}
+/* .text_side h1{
+    color: #fff;
+    font-weight: lighter;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+} */
+.but_room{
+    width: 100%;
+    height: 20%;
+    /* background-color: yellow; */
+    padding-top: 14px;
+}
+.but_room button{
+    background-color: rgb(255, 145, 42);
+    width: 35%;
+    height: 45px;
+    font-size: 1rem;
+    color: rgba(255, 255, 255, 0.856);
+    border: none;
+    outline: none;
+    border-radius: 40px;
+    cursor: pointer;
+    letter-spacing: 1px;
+    /* font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif; */
+}
+.but_room button:hover{
+    background-color: rgb(255, 50, 19);
+}
+.but_room button:nth-child(2){
+    color: rgba(255, 255, 255, 0.603);
+    background-color: transparent;
+    border: 2px solid rgba(255, 255, 255, 0.596);
+    margin: 0 10px;
+}
+.but_room button:nth-child(2):hover{
+    background-color: #fff;
+    color: #000000;
+}
+
+.social{
+    width: 100%;
+    height: 100%;
+    /* background-color: #fff; */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.social a{
+    color: rgba(255, 255, 255, 0.541);
+    font-size: 1.6rem;
+    margin: 0 20px;
+    transition-duration: 500ms;
+}
+.social a:hover{
+    transform: translateY(-5px);
+}
+.menu_room{
+    display: none;
+}
+.sidenav{
+    display: none;
+}
+@media(max-width:768px){
+    .main_div{
+        height: 100vh!important;
+        
+        
+    }
+    .center_space{
+        width: 100%;
+        height: 115vh!important;
+        /* padding: 10px 0; */
+        border-radius: 0;
+    }
+    .nv_brand{
+        display: none;
+        /* height: 0%!important; */
+    }
+    .center_room{
+        height: 100vh;
+        flex-direction: column;
+    }
+    .text_side{
+        height: 50vh!important;
+        width: 100%!important;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    .set_text{
+        margin-top: 40px;
+        width: 95%!important;
+        height: 50vh!important;
+        padding: 0;
+        /* background-color: red; */
+    }
+    .but_room button{
+        width: 45%;
+        font-size: 1rem;
+    }
+    .set_text h1{
+        width: 100%;
+        font-size: 2rem;
+        margin: 10px 0;
+    }
+    .set_text p{
+        font-size: 1rem;
+        margin: 10px 0;
+    }
+    .img_side {
+        position: relative;
+        top: 60px;
+        margin-top: 0px;
+        width: 100%!important;
+        height: 100%!important;
+        /* background-color: red; */
+
+    }
+    .menu_room{
+        display: block;
+        position: fixed;
+        z-index: 9;
+        right: 3%;
+        top: 3%;
+        width: 40px;
+        background-color: #fff;
+        border-radius: 5px;
+    }
+    .sidenav{
+        position: absolute;
+        width: 60%;
+        height: 0;
+        background-color: rgb(0, 0, 0);
+        z-index: 999;
+        display: block;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+        overflow: hidden;
+        transition-duration: 500ms;
+    }
+    a{
+        color: #fff;
+        text-decoration: none;
+        font-size: 1.5rem;
+        margin: 30px 0;
+    }
+    .sidenav button{
+        position: absolute;
+        color: #fff;
+        top: 15px;
+        right: 15px;
+        background-color: transparent;
+        font-size: 2rem;
+        border: none;
+        outline: none;
+    }
+
+    
+}
